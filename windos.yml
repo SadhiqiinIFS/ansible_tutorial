@@ -1,0 +1,12 @@
+---
+ 
+-  hosts: windows
+   gather_facts: true
+   tasks:
+   - name: download build from FTP
+     win_get_url:
+          url: ftp://ftpeu.ifsworld.com/308652/FSM6/FSM_6_U14_D1.zip
+          dest: C:\FSM-Build\FSM_6_U14_D1.zip
+          url_username: mosalk
+          url_password: Rizna@040819884
+          validate_certs: no
