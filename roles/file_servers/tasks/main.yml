@@ -1,0 +1,5 @@
+- name: install smaba oackage
+  tags: samba
+  package:
+    name: samba
+    state: latest
